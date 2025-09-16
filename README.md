@@ -1,8 +1,45 @@
 # strava-lite
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# Strava Lite
+
+A lightweight fitness tracker built with **Next.js (App Router)**, **Supabase**, and **local AI (Ollama)**.  
+Track runs & rides, manage history, and get AI-powered daily workout suggestions.
+
+---
+
+## ✨ Features
+🔐 Authentication with Supabase (magic link / email-password)
+📝 Add activity (sport, title, date, duration, distance, effort, notes)
+📊 Derived stats (pace, avg speed)
+📜 Personal activity history with search & filter
+✏️ Edit & Delete (soft delete with optimistic UI)
+🤖 AI Suggestions via Ollama (Mistral/Llama3)
+📈 Optional weekly summary card (totals, averages, top sport)
+
+---
+
+## Tech Stack
+**Frontend:** Next.js 14, React, TypeScript, Tailwind CSS  
+**Backend:** Next.js API Routes, Supabase Postgres (with RLS)  
+**Auth:** Supabase Auth  
+**AI:** Ollama (local LLM inference)  
+**Validation:** Zod  
+
+---
+
+##  Getting Started
+
+### 1. Clone & Install
+bash
+
+git clone https://github.com/<your-username>/strava-lite.git
+cd strava-lite/strava-lite
+npm install
+
+
+
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 First, run the development server:
 
